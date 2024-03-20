@@ -16,7 +16,7 @@ server = Server(horizon_url="https://horizon.stellar.org")
 account_id = "GAEWGC767MD2E4NPEJQM5FUJAOFBGUYPZGCNCNASWEWNSAIGQC7T26KS"
 
 def balance_handler(account_response):
-    balance = account_response["balances"][2]  # Assuming XLM is the first asset in the list
+    balance = account_response["balances"][3]  # Assuming XLM is the first asset in the list
     xlm_balance = balance['balance'].split('.')[0]  # Extract the part before the dot
     print(f"XLM balance: {xlm_balance}")
 
